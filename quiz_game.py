@@ -32,4 +32,5 @@ else:
 
 print(f'Total score:{score}')
 print('You have ' + str(score) + ' question correct')
-
+percentage = round(((score/3) * 100),2)
+print('Your percentage score ' + str(percentage) + ' %')
