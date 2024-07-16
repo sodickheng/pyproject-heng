@@ -1,6 +1,7 @@
 #lesson from Tech with Tim youtube video
 from cryptography.fernet import Fernet
 
+# Uncomment this function to generate and save a new key
 '''
 def write_key():
     key = Fernet.generate_key()
