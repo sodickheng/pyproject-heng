@@ -26,7 +26,7 @@ def get_weather(api_key, city, units='metric'):
         return None
 
 if __name__ == "__main__":
-    api_key = '4f54453d8fd4dd72e02dbf850fa8fbf8'  # Replace with your actual API key
+    api_key = '4f54453d8fd4dd7'  # Replace with your actual API key
     city = 'Singapore'  # Replace with your desired city
     weather = get_weather(api_key, city)
 
