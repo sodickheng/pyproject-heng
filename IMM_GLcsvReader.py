@@ -1,4 +1,5 @@
 import pandas as pd
+import numpy as np
 
 # Replace 'your_file.csv' with the path to your CSV file
 #csv_file_path = '181102-094919_GL30_0228_00001370_NG_WAVE.csv'
@@ -13,13 +14,22 @@ df = pd.read_csv(csv_file_path,encoding='utf-8')
 #print(df.head(5))
 #print(df.tail(3))
 
-#result = df[["OKNG", "Shot No.","Total Shot No."]]
-#print(result.head())
+result = df[["OKNG", "Shot No.","Total Shot No."]]
+print(result.head())
 
-#result = df[df["Total Shot No."] > 11905]
-#print(result)
+# get value of location row and column .at
+#print(df.iloc[7:20, 0:7])
+print(df.at[0, "Part Counts"])
+print(df.at[0, "Total Shot No."])
 
-print(df.iloc[0:10, 2:5])
-print(df[["Part Counts"]])
+valueA = df.at[0, "Part Counts"]
+valueB = df.at[0, "Total Shot No."]
+Total_Value = valueA + valueB
+print(Total_Value)
 
-#print(df.iloc[2:10, 1:1].isnull().values.any())
+
+
+
+
+
+
