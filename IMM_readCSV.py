@@ -14,6 +14,7 @@ df = pd.read_csv(csv_file_path,encoding='utf-8')
 
 print(df.iloc[7:11, 0:7])
 #print(df.dtypes)  # to check data types
+#print(type(df))
 
 # Time column
 value1 = df.iloc[8,6]  # row and column
